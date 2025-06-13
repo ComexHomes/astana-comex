@@ -17,10 +17,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>The Reveal</title>
+        <title>ASTANA</title>
         <meta
-          name="description"
-          content="Come to The Reveal and we shall offer you the best housing you need while in Nairobi."
+          name="WELCOME TO
+Astana RESIDENCE"
+          content="Discover the pinnacle of luxury and immerse yourself in the finest
+living experience at Astana Residence. This exceptional development
+seamlessly combines timeless elegance with classic charm, offering a
+sophisticated and refined lifestyle like no other."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
