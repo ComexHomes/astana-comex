@@ -1,34 +1,35 @@
-import React,{useEffect} from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+"use client";
+import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Amenitiessecond() {
-
   useEffect(() => {
-    AOS.init({duration:1500})
-  })
+    AOS.init({ duration: 1500 });
+  }, []);
 
   return (
-    <div data-aos='fade-up' className='amenities-second'>
-        <div className="amenities-first-heading">
-            <h3>ENIGMATIC</h3>
-            <h2>ARCHITECTURE</h2>
-            
-        </div>
-        <div className="amenities-first-text">
-            <p>The Reveal, Sets the standard for revolutionary
-architectural innovation and premier living
-experience in the heart of Kilimani,
-Nairobi County.
-The architecture of these beautiful and artfully
-designed units, meticulously set within Nairobi’s
-most blue-chip location, offers unobstructed, scenic
-views of the Ngong Hills and Nairobi CBD.
-The Reveal offers exquisite 1 Bedrooms,
-and Studios.</p>
-        </div>
+    <div data-aos="fade-up" className="amenities-second">
+      <div className="amenities-first-heading">
+        <h3>ASTANA</h3>
+        <h2>RESIDENCE</h2>
+      </div>
+      <div className="amenities-first-text">
+        <p>
+          Discover the pinnacle of luxury and immerse yourself in the finest
+          living experience at Astana Residence. This exceptional development
+          seamlessly combines timeless elegance with classic charm, offering a
+          sophisticated and refined lifestyle like no other.
+        </p>
+        <p>
+          Rising above the ordinary, Astana Residence redefines modern living in
+          Ngara, Nairobi. This mixed-use development integrates residential,
+          retail, entertainment, and leisure spaces, complemented by luxurious
+          five-star amenities and breathtaking views of the CBD skyline.
+        </p>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Amenitiessecond
+export default Amenitiessecond;

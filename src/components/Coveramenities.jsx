@@ -1,20 +1,26 @@
-import Image from 'next/image'
-import Banner from '../assets/bannerfive.jpg'
-import React,{useEffect} from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+"use client";
+import Image from "next/image";
+import Banner from "../assets/Interior 11 - Lift Lobby.jpg";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Coveramenities() {
-
   useEffect(() => {
-    AOS.init({duration:1500})
-  })
+    AOS.init({ duration: 1500 });
+  });
 
   return (
     <div>
-        <Image priority='true' className='cover-amenities' src={Banner} alt='cover amenities' height={500} />
+      <Image
+        priority="true"
+        className="cover-amenities"
+        src={Banner}
+        alt="cover amenities"
+        height={500}
+      />
     </div>
-  )
+  );
 }
 
-export default Coveramenities
+export default Coveramenities;

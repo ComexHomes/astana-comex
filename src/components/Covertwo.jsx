@@ -1,5 +1,5 @@
+"use client"
 import Image from "next/image"
-import cover from '../assets/One bed (9).jpg'
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -12,7 +12,8 @@ function Covertwo() {
 
   return (
     <div>
-        <Image data-aos='fade-up' className='coverimage' src={cover} height={500} alt='cover'/>
+        <Image data-aos='fade-up' className='coverimage' src="/Interior 07 - Studio 01.jpg" width={1200} // Add width and height for better layout performance
+        height={600} alt='cover'/>
     </div>
   )
 }

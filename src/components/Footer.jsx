@@ -1,6 +1,8 @@
+"use client"
+
 import Image from "next/image"
-import Logo from '../assets/logoblack.jpg'
-import React,{useEffect} from 'react'
+// import Logo from '../assets/logoblack.jpg'
+import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -9,15 +11,22 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   useEffect(() => {
-    AOS.init({duration:1500})
-  })
+    AOS.init({ duration: 1500 })
+  }, []) // Ensures animation runs only once after mount
 
   return (
     <div data-aos='fade-up' className='main-footer'>
       <div className="top">
         <div className="area">
           <div className="right-area-side">
-            <Image src={Logo} height={200} className='footer-image' width={200} priority='true' alt='the reveal logo'/>
+            <Image 
+              src='/001.jpg' 
+              height={80} 
+              width={120} 
+              className='footer-image' 
+              priority 
+              alt='Astana Residence Logo' 
+            />
           </div>
 
           <div className="logo-line"></div>
@@ -25,21 +34,22 @@ function Footer() {
         <div className="area">
           <div className="right-area-side">
             <h3>Office Hours</h3>
-            <p>Monday - Friday 08:30am to 16:30pm</p>
-            <p>Saturday - closed</p>
+            <p>Monday - Friday: 08:30 AM to 4:30 PM</p>
+            <p>Saturday - Sunday: Closed</p>
           </div>
 
           <div className="area-line"></div>
         </div>
         <div className="right-area-side">
-          <h3>comex homes</h3>
-          <p>Hurligham Telkom Plaza. 1st Floor.</p>
-          <p>Phone : +254111055155</p>
+          <h3>Comex Homes</h3>
+          <p>Hurligham Telkom Plaza, 1st Floor</p>
+          <p>Phone: +254 111 055 155</p>
+          <p>Email: info@comexhomes.ke</p>
         </div>
       </div>
 
       <div className="bottom">
-        <p>The Reveal &copy; {currentYear} </p>
+        <p>Astana Residence &copy; {currentYear}</p>
       </div> 
     </div>
   )

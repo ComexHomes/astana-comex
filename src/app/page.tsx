@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 // import { Inter } from '@next/font/google'
 // import { NextSeo } from "next-seo";
-import styles from "@/styles/Home.module.css";
+import styles from "./Home.module.css";
 import Homebanner from "@/components/Homebanner";
 import Aboutteam from "@/components/Aboutteam";
 import Cover from "@/components/Cover";
