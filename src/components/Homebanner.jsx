@@ -26,7 +26,7 @@ function Homebanner() {
       {/* Overlay text introducing Astana Residence */}
       <div className="text">
         <h1>Welcome to Astana Residence</h1>
-        <h3>Ngara, Nairobi - Luxury Living Redefined</h3>
+        {/* <h3>Ngara, Nairobi - Luxury Living Redefined</h3> */}
       </div>
     </div>
   )
