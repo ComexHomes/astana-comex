@@ -1,24 +1,21 @@
-"use client"; // Required for useEffect in App Router
+"use client";
 
 import { TbSwimming } from "react-icons/tb";
+import { GiLift } from "react-icons/gi";
+import { MdOutlineSecurity } from "react-icons/md";
 import {
-  GiLift,
-  GiPowerGenerator,
-  GiWaterTank,
-  GiCctvCamera,
-} from "react-icons/gi";
-import { MdBusinessCenter, MdChair, MdOutlineSecurity } from "react-icons/md";
-import {
-  FaCouch,
   FaParking,
+  FaRegBuilding,
   FaSatelliteDish,
   FaUsersCog,
-  FaRegBuilding,
 } from "react-icons/fa";
-import { AiOutlineCoffee } from "react-icons/ai";
 import { CgGym } from "react-icons/cg";
-import { ImRoad } from "react-icons/im";
-import { RiRoadsterLine } from "react-icons/ri";
+import { AiOutlineCoffee } from "react-icons/ai";
+import { BsFillLightbulbFill } from "react-icons/bs";
+import { MdWaterDrop } from "react-icons/md";
+import { FiMonitor } from "react-icons/fi";
+import { MdBusinessCenter } from "react-icons/md";
+import { FaCouch } from "react-icons/fa";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -48,8 +45,28 @@ function CityAmenities() {
         </div>
 
         <div className="city-card">
-          <FaCouch className="icon-city" color="#777777" />
-          <h3>Rooftop Residents Lounge</h3>
+          <FiMonitor className="icon-city" color="#777777" />
+          <h3>CCTV Surveillance</h3>
+        </div>
+
+        <div className="city-card">
+          <MdOutlineSecurity className="icon-city" color="#777777" />
+          <h3>Manned Security Entry</h3>
+        </div>
+
+        <div className="city-card">
+          <FaRegBuilding className="icon-city" color="#777777" />
+          <h3>Visitors Reception Area</h3>
+        </div>
+
+        <div className="city-card">
+          <BsFillLightbulbFill className="icon-city" color="#777777" />
+          <h3>Backup Power Generator</h3>
+        </div>
+
+        <div className="city-card">
+          <MdWaterDrop className="icon-city" color="#777777" />
+          <h3>Borehole Water Supply</h3>
         </div>
 
         <div className="city-card">
@@ -67,41 +84,9 @@ function CityAmenities() {
           <h3>Business Centre</h3>
         </div>
 
-        {/* Security & Utilities */}
         <div className="city-card">
-          <GiCctvCamera className="icon-city" color="#777777" />
-          <h3>CCTV Surveillance</h3>
-        </div>
-
-        <div className="city-card">
-          <MdOutlineSecurity className="icon-city" color="#777777" />
-          <h3>Manned Security Entry</h3>
-        </div>
-
-        <div className="city-card">
-          <GiPowerGenerator className="icon-city" color="#777777" />
-          <h3>Backup Power Generator</h3>
-        </div>
-
-        <div className="city-card">
-          <GiWaterTank className="icon-city" color="#777777" />
-          <h3>Borehole Water Supply</h3>
-        </div>
-
-        {/* Visitor & Transport */}
-        <div className="city-card">
-          <ImRoad className="icon-city" color="#777777" />
-          <h3>Dual Access from Ngong Road</h3>
-        </div>
-
-        <div className="city-card">
-          <RiRoadsterLine className="icon-city" color="#777777" />
-          <h3>Designated Vehicular Drop-Off</h3>
-        </div>
-
-        <div className="city-card">
-          <FaRegBuilding className="icon-city" color="#777777" />
-          <h3>Visitors Reception Area</h3>
+          <FaCouch className="icon-city" color="#777777" />
+          <h3>Rooftop Residents Lounge</h3>
         </div>
 
         <div className="city-card">
@@ -109,7 +94,6 @@ function CityAmenities() {
           <h3>Secure Parking for Residents & Visitors</h3>
         </div>
 
-        {/* Management & Connectivity */}
         <div className="city-card">
           <FaUsersCog className="icon-city" color="#777777" />
           <h3>Onsite Management Facilities</h3>
