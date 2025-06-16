@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-import Logo from "../assets/logo.jpg"; // Make sure this path is correct
+// import Logo from "../assets/logo.jpg"; // Make sure this path is correct
 import NavItem from "./NavItem";
 
 // Define types for menu items
@@ -20,7 +20,7 @@ const MENU_LIST: MenuItem[] = [
   { text: "Location", href: "/location" },
   { text: "Investors Guide", href: "/investorsguide" },
   { text: "Contact", href: "/contact" },
-  { text: "Comex Homes", href: "https://www.comexhomes.ke/"  },
+  { text: "Comex Homes", href: "https://www.comexhomes.ke/" },
 ];
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
       <nav className="nav">
         <Link href="/">
           <Image
-            src='/001.jpg'
+            src="/001.jpg"
             className="nav-image"
             priority
             height={70}
@@ -41,18 +41,13 @@ const Navbar = () => {
           />
         </Link>
 
-        <div
-          onClick={() => setNavActive(!navActive)}
-          className="nav__menu-bar"
-        >
+        <div onClick={() => setNavActive(!navActive)} className="nav__menu-bar">
           <div></div>
           <div></div>
           <div></div>
         </div>
 
-        <div
-          className={`${navActive ? "active" : ""} nav__menu-list`}
-        >
+        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
           {MENU_LIST.map((menu, idx) => (
             <div
               key={menu.text}

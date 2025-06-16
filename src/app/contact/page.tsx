@@ -3,7 +3,7 @@
 import React from "react";
 
 // Components
-import MapArea from "@/components/MapArea";
+// import MapArea from "@/components/MapArea";
 
 // SEO & Metadata
 import Head from "next/head";

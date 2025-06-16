@@ -13,14 +13,14 @@ import { FaLinkedinIn } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import Result from "./Result"; // Ensure this component is updated accordingly
 
-interface FormValues {
-  firstName: string;
-  secondName: string;
-  email: string;
-  phone: string;
-  subject: string;
-  message: string;
-}
+// interface FormValues {
+//   firstName: string;
+//   secondName: string;
+//   email: string;
+//   phone: string;
+//   subject: string;
+//   message: string;
+// }
 
 function ContactArea() {
   const [result, setResult] = useState(false);

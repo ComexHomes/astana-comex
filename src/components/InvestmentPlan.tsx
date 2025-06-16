@@ -13,7 +13,7 @@ function InvestmentPlan() {
     <div data-aos="fade-up" className="investment-plan">
       <div className="top-text">
         <h3>Second Source of Income</h3>
-        <h1>Investor’s Plan</h1>
+        <h1>Investors Plan</h1>
         <h3>Astana Residence never looked this good</h3>
       </div>
 
