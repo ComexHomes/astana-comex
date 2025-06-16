@@ -1,32 +1,31 @@
 "use client";
 
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react"; // Removed unused `useEffect`
 import OneBedroomItem from "./Onebedroomitem";
 
-// Use image paths from public folder
 function OneBedroomSlider() {
   const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
-  const listRef = useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLDivElement | null>(null);
 
   const handleClick = (direction: string) => {
     setIsMoved(true);
     if (!listRef.current) return;
 
-    const distance = listRef.current.getBoundingClientRect().x - 50;
+    let distance = listRef.current.getBoundingClientRect().x - 50;
 
     if (direction === "left" && slideNumber > 0) {
       setSlideNumber(slideNumber - 1);
       listRef.current.style.transform = `translateX(${230 + distance}px)`;
     }
+
     if (direction === "right" && slideNumber < 19) {
       setSlideNumber(slideNumber + 1);
       listRef.current.style.transform = `translateX(${-230 + distance}px)`;
     }
   };
 
-  // Define slider items with correct image paths from public folder
   const Images = [
     {
       id: 0,
