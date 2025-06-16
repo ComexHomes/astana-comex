@@ -7,13 +7,13 @@ import OneBedroomItem from "./Onebedroomitem";
 function OneBedroomSlider() {
   const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
-  const listRef = useRef<HTMLDivElement | null>(null);
+  const listRef = useRef<HTMLDivElement>(null);
 
   const handleClick = (direction: string) => {
     setIsMoved(true);
     if (!listRef.current) return;
 
-    let distance = listRef.current.getBoundingClientRect().x - 50;
+    const distance = listRef.current.getBoundingClientRect().x - 50; // ✅ Changed to `const`
 
     if (direction === "left" && slideNumber > 0) {
       setSlideNumber(slideNumber - 1);
