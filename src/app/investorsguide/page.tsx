@@ -1,4 +1,4 @@
-// src/app/investorsguide/page.tsx or src/pages/investorsguide.tsx
+// src/app/investorsguide/page.tsx
 
 import React from "react";
 
@@ -33,6 +33,9 @@ const InvestorsGuidePage = () => {
         />
         <meta
           property="og:url"
+          content="https://www.astanarezidence.ke/investorsguide"
+        />
+        <meta property="og:type" content="website" />
         <meta property="og:image" content="/og-image.jpg" />
       </Head>
 
