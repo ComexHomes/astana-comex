@@ -23,7 +23,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Cityamenities() {
+function CityAmenities() {
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
@@ -48,11 +48,6 @@ function Cityamenities() {
         </div>
 
         <div className="city-card">
-          <MdBusinessCenter className="icon-city" color="#777777" />
-          <h3>Business Center</h3>
-        </div>
-
-        <div className="city-card">
           <FaCouch className="icon-city" color="#777777" />
           <h3>Rooftop Residents Lounge</h3>
         </div>
@@ -65,6 +60,11 @@ function Cityamenities() {
         <div className="city-card">
           <AiOutlineCoffee className="icon-city" color="#777777" />
           <h3>Coffee Lounge</h3>
+        </div>
+
+        <div className="city-card">
+          <MdBusinessCenter className="icon-city" color="#777777" />
+          <h3>Business Centre</h3>
         </div>
 
         {/* Security & Utilities */}
@@ -124,4 +124,4 @@ function Cityamenities() {
   );
 }
 
-export default Cityamenities;
+export default CityAmenities;

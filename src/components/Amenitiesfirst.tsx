@@ -1,19 +1,21 @@
 "use client";
+
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Amenitiesfirst() {
+function AmenitiesFirst() {
   useEffect(() => {
     AOS.init({ duration: 1500 });
-  }, []);
+  }, []); // Ensures animation initializes only once
 
   return (
     <div data-aos="fade-up" className="amenities-first">
       <div className="amenities-first-heading">
         <h3>LINKING YOU</h3>
-        <h2>TO THE CITY’S HEART</h2>
+        <h2>TO THE CITYS HEART</h2>
       </div>
+
       <div className="amenities-first-text">
         <p>
           Experience modern urban living at its finest in Ngara, Nairobi. Astana
@@ -35,4 +37,4 @@ function Amenitiesfirst() {
   );
 }
 
-export default Amenitiesfirst;
+export default AmenitiesFirst;
