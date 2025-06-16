@@ -32,7 +32,7 @@ const Navbar = () => {
       <nav className="nav">
         <Link href="/">
           <Image
-            src="/001.jpg"
+            src="/ASTANA-RESIDENCE-LOGO.png"
             className="nav-image"
             priority
             height={70}

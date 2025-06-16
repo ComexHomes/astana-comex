@@ -147,7 +147,7 @@ function ContactArea() {
         />
 
         <Image
-          src="/Interior 11 - Lift Lobby.jpg"
+          src="/ASTANA-RESIDENCE-LOGO.png"
           alt="Astana Residence logo"
           width={150}
           height={100}

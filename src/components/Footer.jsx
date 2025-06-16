@@ -1,31 +1,30 @@
-"use client"
+"use client";
 
-import Image from "next/image"
+import Image from "next/image";
 // import Logo from '../assets/logoblack.jpg'
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Footer() {
-
   const currentYear = new Date().getFullYear();
 
   useEffect(() => {
-    AOS.init({ duration: 1500 })
-  }, []) // Ensures animation runs only once after mount
+    AOS.init({ duration: 1500 });
+  }, []); // Ensures animation runs only once after mount
 
   return (
-    <div data-aos='fade-up' className='main-footer'>
+    <div data-aos="fade-up" className="main-footer">
       <div className="top">
         <div className="area">
           <div className="right-area-side">
-            <Image 
-              src='/001.jpg' 
-              height={80} 
-              width={120} 
-              className='footer-image' 
-              priority 
-              alt='Astana Residence Logo' 
+            <Image
+              src="/ASTANA-RESIDENCE-LOGO.png"
+              height={80}
+              width={120}
+              className="footer-image"
+              priority
+              alt="Astana Residence Logo"
             />
           </div>
 
@@ -50,9 +49,9 @@ function Footer() {
 
       <div className="bottom">
         <p>Astana Residence &copy; {currentYear}</p>
-      </div> 
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
