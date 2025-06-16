@@ -13,7 +13,7 @@ function InvestmentPlan() {
     <div data-aos="fade-up" className="investment-plan">
       <div className="top-text">
         <h3>Second Source of Income</h3>
-        <h1>Investor’s Plan</h1>
+        <h1>Investor&rsquo;s Plan</h1>
         <h3>Astana Residence Never Looked This Good</h3>
       </div>
 
@@ -26,9 +26,9 @@ function InvestmentPlan() {
           <div className="text-area-investment">
             <p>
               Astana Residence is perfectly positioned in Ngara, Nairobi — a
-              prime location offering unmatched convenience. It's within walking
-              distance of the CBD, National Museum, and just two minutes from
-              the Nairobi Expressway.
+              prime location offering unmatched convenience. It&apos;s within
+              walking distance of the CBD, National Museum, and just two minutes
+              from the Nairobi Expressway.
             </p>
           </div>
         </div>
