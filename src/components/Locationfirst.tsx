@@ -25,7 +25,7 @@ function LocationFirst() {
         </p>
 
         <p>
-          This prime location ensures you're always close to retail hubs,
+          This prime location ensures you&apos;re always close to retail hubs,
           educational institutions, and transport networks — making it ideal for
           students, young professionals, and investors alike.
         </p>
