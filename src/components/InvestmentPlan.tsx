@@ -13,8 +13,8 @@ function InvestmentPlan() {
     <div data-aos="fade-up" className="investment-plan">
       <div className="top-text">
         <h3>Second Source of Income</h3>
-        <h1>Investors Plan</h1>
-        <h3>Astana Residence never looked this good</h3>
+        <h1>Investor’s Plan</h1>
+        <h3>Astana Residence Never Looked This Good</h3>
       </div>
 
       <div data-aos="fade-up" className="investment-area">
@@ -42,9 +42,9 @@ function InvestmentPlan() {
             <p>
               Astana Residence redefines modern living with world-class
               amenities including: Swimming pool, rooftop lounge, fully fitted
-              gym, CCTV surveillance, high-speed lifts, and more. Experience
-              luxury and functionality designed for students and young
-              professionals.
+              gym, CCTV surveillance, high-speed lifts, visitors reception,
+              back-up generator, borehole water supply, and internet
+              connectivity. Designed for students and young professionals.
             </p>
           </div>
         </div>
@@ -70,7 +70,7 @@ function InvestmentPlan() {
         {/* Card 4 */}
         <div className="investment-card">
           <div className="heading-place">
-            <h2>PROJECT TIMELINES</h2>
+            <h2>PROJECT TIMELINE</h2>
           </div>
           <div className="text-area-investment">
             <p>Q4 2024 – Q4 2026</p>
@@ -78,6 +78,39 @@ function InvestmentPlan() {
         </div>
 
         {/* Card 5 */}
+        <div className="investment-card">
+          <div className="heading-place">
+            <h2>RENTAL YIELD</h2>
+          </div>
+          <div className="text-area-investment">
+            <ul>
+              <li>
+                <strong>Studio:</strong> KSH 23,400/month (8% yield)
+              </li>
+              <li>
+                <strong>One Bedroom:</strong> KSH 36,400/month (8% yield)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Card 6 */}
+        <div className="investment-card">
+          <div className="heading-place">
+            <h2>CAPITAL APPRECIATION</h2>
+          </div>
+          <div className="text-area-investment">
+            <p>
+              <strong>Expected Growth:</strong> Up to 30% over 2 years, thanks
+              to premium location, high tenant demand, and strategic development
+              planning.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" className="investment">
+        {/* Card 7 */}
         <div className="investment-card">
           <div className="heading-place">
             <h2>STANDARD PAYMENT PLAN</h2>
@@ -90,7 +123,7 @@ function InvestmentPlan() {
           </div>
         </div>
 
-        {/* Card 6 */}
+        {/* Card 8 */}
         <div className="investment-card">
           <div className="heading-place">
             <h2>ALTERNATIVE PAYMENT PLAN</h2>
@@ -101,6 +134,23 @@ function InvestmentPlan() {
               payments may be eligible for special discounts. Please contact our
               sales team for more details.
             </p>
+          </div>
+        </div>
+
+        {/* Card 9 */}
+        <div className="investment-card">
+          <div className="heading-place">
+            <h2>UNIT PRICING</h2>
+          </div>
+          <div className="text-area-investment">
+            <ul>
+              <li>
+                <strong>Studio:</strong> From KSH 3,510,000
+              </li>
+              <li>
+                <strong>One-Bedroom:</strong> From KSH 5,460,000
+              </li>
+            </ul>
           </div>
         </div>
       </div>
