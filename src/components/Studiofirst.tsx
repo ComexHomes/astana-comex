@@ -21,22 +21,21 @@ function StudioFirst() {
 
       <div className="amenities-first-text">
         <p>
-          Nestled in modern convenience yet connected to a world-class
-          lifestyle, Astana Residence offers an exquisite collection of premium
-          studios designed for students and young professionals.
+          Astana Residence presents a refined collection of premium studio
+          apartments—crafted with young professionals and students in mind. Each
+          291 SQFT studio offers: Modern convenience paired with timeless design
+          Thoughtfully planned layouts that maximize space and functionality
+          High-quality finishes and integrated storage solutions A lifestyle of
+          comfort and connectivity, in a vibrant urban setting Compact yet
+          elevated, these studios deliver everything you need to live, work, and
+          unwind effortlessly—all within a world-class environment.
         </p>
 
         <ul className="bedrooms">
           <li>
-            <strong>Premium Studio</strong> – 27 SQM
+            <strong>Premium Studio</strong> – 291 SQFT studio
           </li>
         </ul>
-
-        <p>
-          Masterfully set, the Studios are balanced in both proportion and
-          features. All the contemporary life-enhancing design elements expected
-          in this class are blended seamlessly.
-        </p>
       </div>
 
       <div style={{ marginTop: "30px" }} className="btn-area">

@@ -12,9 +12,9 @@ function InvestmentPlan() {
   return (
     <div data-aos="fade-up" className="investment-plan">
       <div className="top-text">
-        <h3>Second Source of Income</h3>
-        <h1>Investor&rsquo;s Plan</h1>
-        <h3>Astana Residence Never Looked This Good</h3>
+        <h3>Your Second Stream Starts Here</h3>
+        <h1>The Smart Investors Choice</h1>
+        <h3>Astana Residence — Where Returns Meet Refined Living</h3>
       </div>
 
       <div data-aos="fade-up" className="investment-area">
@@ -25,10 +25,11 @@ function InvestmentPlan() {
           </div>
           <div className="text-area-investment">
             <p>
-              Astana Residence is perfectly positioned in Ngara, Nairobi — a
-              prime location offering unmatched convenience. It&apos;s within
-              walking distance of the CBD, National Museum, and just two minutes
-              from the Nairobi Expressway.
+              Astana Residence enjoys a prime address in Ngara, Nairobi —
+              offering unmatched convenience in the heart of the city. Just a
+              short walk to the CBD and National Museum, and only two minutes
+              from the Nairobi Expressway, it puts you effortlessly close to
+              everything that matters.
             </p>
           </div>
         </div>
@@ -40,11 +41,13 @@ function InvestmentPlan() {
           </div>
           <div className="text-area-investment">
             <p>
-              Astana Residence redefines modern living with world-class
-              amenities including: Swimming pool, rooftop lounge, fully fitted
-              gym, CCTV surveillance, high-speed lifts, visitors reception,
-              back-up generator, borehole water supply, and internet
-              connectivity. Designed for students and young professionals.
+              Astana Residence sets a new standard for modern living,
+              thoughtfully designed for students and young professionals. Enjoy
+              world-class amenities including a rooftop lounge, swimming pool,
+              fully equipped gym, high-speed lifts, CCTV surveillance, visitor
+              reception, reliable backup power, borehole water supply, and
+              seamless internet connectivity — all crafted for comfort,
+              security, and lifestyle.
             </p>
           </div>
         </div>
@@ -56,11 +59,10 @@ function InvestmentPlan() {
           </div>
           <div className="text-area-investment">
             <p>
-              The growing demand for upscale Airbnb accommodations and
-              contemporary studio and one-bedroom apartments has created an
-              ideal environment for real estate investors. Astana Residence
-              offers a unique opportunity to invest in a project that delivers
-              strong rental yield and capital appreciation.
+              The surge in demand for upscale Airbnbs, hotel-style apartments,
+              and stylish one-bedroom units is reshaping Kenyas property market.
+              With a solid foundation and increasing returns, this sector
+              continues to attract a wave of forward-thinking investors.
             </p>
           </div>
         </div>
@@ -73,7 +75,7 @@ function InvestmentPlan() {
             <h2>PROJECT TIMELINE</h2>
           </div>
           <div className="text-area-investment">
-            <p>Q4 2024 – Q4 2026</p>
+            <p>Q3 2025 – Q1 2029</p>
           </div>
         </div>
 
@@ -85,10 +87,10 @@ function InvestmentPlan() {
           <div className="text-area-investment">
             <ul>
               <li>
-                <strong>Studio:</strong> KSH 23,400/month (8% yield)
+                <strong>Studio:</strong> KSH 29000/month (10% yield)
               </li>
               <li>
-                <strong>One Bedroom:</strong> KSH 36,400/month (8% yield)
+                <strong>One Bedroom:</strong> KSH 45000/month (10% yield)
               </li>
             </ul>
           </div>
@@ -101,7 +103,7 @@ function InvestmentPlan() {
           </div>
           <div className="text-area-investment">
             <p>
-              <strong>Expected Growth:</strong> Up to 30% over 2 years, thanks
+              <strong>Expected Growth:</strong> Up to 30% over 2 years. Thanks
               to premium location, high tenant demand, and strategic development
               planning.
             </p>
@@ -131,8 +133,8 @@ function InvestmentPlan() {
           <div className="text-area-investment">
             <p>
               <strong>Upfront Payment:</strong> Buyers who opt for early full
-              payments may be eligible for special discounts. Please contact our
-              sales team for more details.
+              payments may be eligible for special discounts. Please contact
+              Property Consultants for more details.
             </p>
           </div>
         </div>

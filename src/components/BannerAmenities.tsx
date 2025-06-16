@@ -14,7 +14,7 @@ function BannerAmenities() {
     <div data-aos="zoom-in" className="banner-amenities">
       <Image
         priority
-        src="/Interior 11 - Lift Lobby.jpg" // Image from public folder
+        src="/004.jpg" // Image from public folder
         alt="Astana Residence Amenities Banner"
         width={1200}
         height={400}

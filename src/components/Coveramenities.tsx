@@ -15,7 +15,7 @@ function CoverAmenities() {
       {/* Image from public folder */}
       <Image
         priority
-        src="/Interior 10 - Studio 02.jpg"
+        src="/Interior 11 - Lift Lobby.jpg"
         alt="Astana Residence Studio Interior"
         width={1200}
         height={600}

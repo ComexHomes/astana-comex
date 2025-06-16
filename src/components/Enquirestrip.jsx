@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -23,11 +23,11 @@ function Enquirestrip() {
         </div>
         <div className="place">
           <h3>completion date</h3>
-          <h2>Q4 2026</h2>
+          <h2>Q1 2029</h2>
         </div>
         <div className="place">
           <h3>payment over</h3>
-          <h2>24 Months</h2>
+          <h2>42 Months</h2>
         </div>
         <div className="place">
           <h3>location</h3>
@@ -38,7 +38,7 @@ function Enquirestrip() {
       <div className="btn-area">
         <div className="place">
           <Link
-            href="https://zfrmz.com/63qeS4QHxcWIQdgr1NB3" 
+            href="https://zfrmz.com/63qeS4QHxcWIQdgr1NB3"
             target="_blank"
             rel="noopener noreferrer"
           >

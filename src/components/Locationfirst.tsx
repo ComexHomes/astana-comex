@@ -13,21 +13,19 @@ function LocationFirst() {
   return (
     <div data-aos="fade-up" className="amenities-first">
       <div className="amenities-first-heading">
-        <h2>LOCATION</h2>
+        <h2>PERFECTLY POSITIONED</h2>
       </div>
 
       <div className="amenities-first-text">
         <p>
-          Nestled in the heart of Ngara, Astana Residence is perfectly
-          positioned for convenience and accessibility. The development is
-          located just a short distance from key landmarks such as the Nairobi
-          CBD, National Museum, and Nairobi Expressway.
-        </p>
-
-        <p>
-          This prime location ensures you&apos;re always close to retail hubs,
-          educational institutions, and transport networks — making it ideal for
-          students, young professionals, and investors alike.
+          Rising above the ordinary, Astana Residence redefines modern living in
+          Ngara, Nairobi. This exceptional mixed use development seamlessly
+          integrates residential, retail, entertainment, and leisure spaces, all
+          complemented by luxurious five-star amenities with breathtaking views
+          of the CBD skyline and beyond. Perfectly situated within walking
+          distance of the CBD, National Museum, and Thika Superhighway, and just
+          two minutes from the Nairobi Expressway, Astana Apartments offers
+          unparalleled convenience at the heart of the city.
         </p>
       </div>
 

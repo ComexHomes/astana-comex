@@ -21,16 +21,20 @@ function OneBedroomFirst() {
 
       <div className="amenities-first-text">
         <p>
-          The epitome of elegant and intuitive design, each one-bedroom
-          apartment offers an effortless blend of luxurious comfort, spacious
-          living areas, and architectural sophistication. These units are
-          designed for modern urban living.
+          Experience skyline views and a floor plan crafted for today’s urban
+          lifestyle. Every executive one‑bedroom residence delivers:
+          Breathtaking open windows that flood the living space with natural
+          light Intuitive, open‑concept layout that maximizes every square foot
+          Sophisticated finishes and premium materials for a refined look and
+          feel Generous living‑and‑dining zone that flows seamlessly into a
+          modern kitchen Serene bedroom retreat designed for rest, privacy and
+          ample storage
         </p>
 
         <ul className="bedrooms">
           <li>
             <span className="bullet"></span>
-            Premium One Bedroom - 42 SQM
+            Executive 1‑Bedroom Residence — 452 sq ft
           </li>
         </ul>
       </div>

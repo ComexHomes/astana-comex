@@ -139,7 +139,7 @@ function ContactArea() {
 
       <div className="contact-logo-area">
         <Image
-          src="/Interior 11 - Lift Lobby.jpg"
+          src="/001.jpg"
           alt="Astana Residence contact image"
           width={400}
           height={400}

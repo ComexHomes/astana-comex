@@ -10,7 +10,7 @@ import AmenitiesSlider from "@/components/Amenitiesslider";
 import Head from "next/head";
 import AmenitiesFirst from "@/components/Amenitiesfirst";
 import CoverAmenities from "@/components/Coveramenities";
-import AmenitiesSecond from "@/components/Amenitiessecond";
+// import AmenitiesSecond from "@/components/Amenitiessecond";
 import CityAmenities from "@/components/Cityamenities";
 
 const AmenitiesPage = () => {
@@ -42,7 +42,7 @@ const AmenitiesPage = () => {
       <BannerAmenities />
       <AmenitiesFirst />
       <CoverAmenities />
-      <AmenitiesSecond />
+      {/* <AmenitiesSecond /> */}
       <AmenitiesSlider />
       <CityAmenities />
     </>

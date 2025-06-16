@@ -42,7 +42,7 @@ function Footer() {
         <div className="right-area-side">
           <h3>Comex Homes</h3>
           <p>Hurligham Telkom Plaza, 1st Floor</p>
-          <p>Phone: +254 111 055 155</p>
+          <p>Phone: +254 709 501 501</p>
           <p>Email: info@comexhomes.ke</p>
         </div>
       </div>

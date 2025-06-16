@@ -14,7 +14,7 @@ const ContactsBanner = () => {
     <div data-aos="zoom-in" className="banner-contact">
       <Image
         priority
-        src="/Interior 11 - Lift Lobby.jpg"
+        src="/003.jpg"
         alt="Astana Residence Banner"
         width={1200}
         height={400}

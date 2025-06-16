@@ -14,7 +14,7 @@ const InvestorsGuideBanner = () => {
     <div data-aos="zoom-in" className="banner-amenities">
       <Image
         priority
-        src="/Interior 04 - 1 BR Dining.jpg"
+        src="/007.jpg"
         alt="Astana Residence - Investors Guide Banner"
         width={1200}
         height={400}

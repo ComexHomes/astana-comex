@@ -14,7 +14,7 @@ function LocationBanner() {
     <div data-aos="zoom-in" className="banner-amenities">
       <Image
         className="banner-image"
-        src="/Interior 02 - 1 BR Lounge 2.jpg"
+        src="/009.jpg"
         alt="Astana Residence Location Banner"
         width={1200}
         height={400}

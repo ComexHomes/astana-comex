@@ -12,21 +12,21 @@ function AmenitiesFirst() {
   return (
     <div data-aos="fade-up" className="amenities-first">
       <div className="amenities-first-heading">
-        <h3>LINKING YOU</h3>
-        <h2>TO THE CITYS HEART</h2>
+        <h2>CONNECTED TO THE CITYS CORE</h2>
       </div>
 
       <div className="amenities-first-text">
         <p>
-          Experience modern urban living at its finest in Ngara, Nairobi. Astana
-          Residence is perfectly positioned near the Central Business District,
-          National Museum, Thika Superhighway, and just minutes from the Nairobi
-          Expressway.
+          Welcome to next-generation urban living in Ngara, Nairobi. Astana
+          Residence places you steps away from the Central Business District,
+          the National Museum, Thika Superhighway, and the Nairobi Expressway —
+          keeping you effortlessly connected to the pulse of the city.
         </p>
         <p>
-          Surrounded by world-class amenities, this mixed-use development offers
-          seamless access to retail, entertainment, leisure, and convenience —
-          all within walking distance.
+          This vibrant mixed-use address blends premium living with unmatched
+          convenience, offering walkable access to top-tier retail,
+          entertainment, dining, and lifestyle amenities — all in one dynamic
+          location.
         </p>
       </div>
 

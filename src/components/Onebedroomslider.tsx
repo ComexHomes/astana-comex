@@ -148,11 +148,11 @@ function OneBedroomSlider() {
         />
       </div>
 
-      <div className="slider-pagination">
+      {/* <div className="slider-pagination">
         <span>
           {slideNumber + 1} / {Images.length}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -19,9 +19,10 @@ function StudioSecond() {
 
       <div className="amenities-first-text">
         <p>
-          Discover urban living deeply rooted in modernity yet effortlessly
-          connected to the green heart of Ngara, Nairobi — surrounded by
-          world-class amenities and designed for students & young professionals.
+          Experience urban living redefined—where contemporary design meets the
+          green heart of Ngara, Nairobi. Thoughtfully crafted for students and
+          young professionals, this vibrant address is surrounded by world-class
+          amenities and seamless city connectivity.
         </p>
       </div>
 

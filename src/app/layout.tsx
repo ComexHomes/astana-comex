@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Enquirestrip from "@/components/Enquirestrip";
 import Footer from "@/components/Footer"; // Adjust path if needed
+import WhatsAppButton from "../components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Astana Residence | Luxury Living in Ngara, Nairobi",
@@ -15,11 +16,11 @@ export const metadata: Metadata = {
     title: "Astana Residence | Luxury Living in Ngara, Nairobi",
     description:
       "Premium studio and one-bedroom apartments offering luxury, convenience, and high rental yield in Ngara, Nairobi.",
-    url: "https://www.astanarezidence.ke",  // Replace with real URL
+    url: "https://www.astanarezidence.com",
     siteName: "Astana Residence",
     images: [
       {
-        url: "/og-image.jpg", // Add an Open Graph image in public/
+        url: "/og-image.jpg",
         width: 800,
         height: 600,
         alt: "Astana Residence Banner Image",
@@ -50,7 +51,8 @@ export default function RootLayout({
         </header>
         <main>{children}</main>
         <footer>
-          <Enquirestrip/>
+          <Enquirestrip />
+          <WhatsAppButton />
           <Footer />
         </footer>
       </body>

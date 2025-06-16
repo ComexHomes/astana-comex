@@ -206,10 +206,10 @@ const AmenitiesSlider = () => {
 
   return (
     <div data-aos="fade-up" className="list">
-      <div className="amenities-slider-heading">
+      {/* <div className="amenities-slider-heading">
         <h3>EXPLORE</h3>
         <h2>ASTANA RESIDENCE UNITS</h2>
-      </div>
+      </div> */}
 
       <div className="wrapper">
         <AiOutlineArrowLeft
@@ -228,11 +228,11 @@ const AmenitiesSlider = () => {
         />
       </div>
 
-      <div className="slider-pagination">
+      {/* <div className="slider-pagination">
         <span>
           {slideNumber + 1} / {Units.length}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 };

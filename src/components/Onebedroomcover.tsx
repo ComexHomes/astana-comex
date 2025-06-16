@@ -8,7 +8,7 @@ function OneBedroomCover() {
     <div className="one-bedroom-cover">
       {/* Using a public folder image */}
       <Image
-        src="/Interior 02 - 1 BR Lounge 2.jpg" // ← Replace with any image you want from the public folder
+        src="/006.jpg" // ← Replace with any image you want from the public folder
         alt="Astana Residence | One Bedroom Interior"
         width={1200}
         height={600}
