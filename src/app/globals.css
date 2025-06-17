@@ -23,12 +23,13 @@ html {
 }
 
 body {
+  overflow: hidden;
   overflow-x: hidden;
 }
 
 body::-webkit-scrollbar,
 .place::-webkit-scrollbar {
-  display: none;
+  display: none !important;
   overflow-x: hidden;
   width: 0;
 }
@@ -240,7 +241,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 10;
 }
 
 /* .enquirestrip::-webkit-scrollbar{
@@ -250,7 +250,7 @@ nav {
 
 .description-area {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   margin-bottom: 10px;
   overflow: hidden;
 }
