@@ -28,7 +28,7 @@ const OneBedroomModal: React.FC<OneBedroomModalProps> = ({ closeModal }) => {
 
         <div className="image-below">
           <Image
-            src="/009.jpg" // Image from public folder
+            src="/one-bedroom-plan.jpeg" // Image from public folder
             alt="One Bedroom Floor Plan - Astana Residence"
             width={900}
             height={400}

@@ -28,7 +28,7 @@ const StudioModal: React.FC<StudioModalProps> = ({ closeModal }) => {
 
         <div className="image-below">
           <Image
-            src="/Interior 09 - Reception.jpg"
+            src="/studio-plan.jpeg"
             alt="Studio Floor Plan - Astana Residence"
             width={900}
             height={400}

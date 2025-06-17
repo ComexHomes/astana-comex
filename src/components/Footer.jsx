@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-// import Logo from '../assets/logoblack.jpg'
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,7 +18,7 @@ function Footer() {
         <div className="area">
           <div className="right-area-side">
             <Image
-              src="/ASTANA-RESIDENCE-LOGO.png"
+              src="/ASTANA-RESIDENCE-LOGO-BLACK.png"
               height={80}
               width={120}
               className="footer-image"

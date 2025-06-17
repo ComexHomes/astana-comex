@@ -30,9 +30,9 @@ function AmenitiesFirst() {
         </p>
       </div>
 
-      <div style={{ marginTop: "30px" }} className="btn-area">
+      {/* <div style={{ marginTop: "30px" }} className="btn-area">
         <button className="btn-light">View Amenities</button>
-      </div>
+      </div> */}
     </div>
   );
 }
