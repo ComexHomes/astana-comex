@@ -1,9 +1,9 @@
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
 
 /* Tailwind config */
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 * {
   margin: 0;
