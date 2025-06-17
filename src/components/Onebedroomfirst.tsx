@@ -39,7 +39,7 @@ function OneBedroomFirst() {
         </ul>
       </div>
 
-      <div style={{ marginTop: "30px" }} className="btn-area">
+      <div className="btn-area mt-30">
         <button onClick={handleClick} className="btn">
           View Floor Plan
         </button>

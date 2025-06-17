@@ -17,7 +17,7 @@ function Aboutteam() {
       <div className="bottom">
         <div className="place">
           <h3>Developer</h3>
-          <h2>Kolobot Holdings</h2>
+          <h2>Kolobot Holdings Limited</h2>
         </div>
         <div className="place">
           <h3>Architect</h3>
@@ -25,11 +25,11 @@ function Aboutteam() {
         </div>
         <div className="place">
           <h3>Structural Engineer</h3>
-          <h2>Metric Integrated Consultancy</h2>
+          <h2>Asec Engineering Consultants</h2>
         </div>
         <div className="place">
           <h3>Associate</h3>
-          <h2>Comex Homes</h2>
+          <h2>Comex Homes Limited</h2>
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ function StudioFirst() {
         </ul>
       </div>
 
-      <div style={{ marginTop: "30px" }} className="btn-area">
+      <div className="btn-area mt-30">
         <button className="btn-light" onClick={handleClick}>
           View Floor Plan
         </button>

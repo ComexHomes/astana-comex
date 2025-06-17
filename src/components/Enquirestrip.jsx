@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
-import WhatsAppButton from "./WhatsAppButton";
 
 function Enquirestrip() {
   useEffect(() => {
@@ -13,7 +12,6 @@ function Enquirestrip() {
 
   return (
     <div data-aos="zoom-in" className="enquirestrip">
-      <WhatsAppButton />
       <div className="description-area">
         <div className="place">
           <h3>you are viewing</h3>

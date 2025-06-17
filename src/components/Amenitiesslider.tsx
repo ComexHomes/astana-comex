@@ -206,11 +206,6 @@ const AmenitiesSlider = () => {
 
   return (
     <div data-aos="fade-up" className="list">
-      {/* <div className="amenities-slider-heading">
-        <h3>EXPLORE</h3>
-        <h2>ASTANA RESIDENCE UNITS</h2>
-      </div> */}
-
       <div className="wrapper">
         <AiOutlineArrowLeft
           className="sliderArrow left"
@@ -227,12 +222,6 @@ const AmenitiesSlider = () => {
           onClick={() => handleClick("right")}
         />
       </div>
-
-      {/* <div className="slider-pagination">
-        <span>
-          {slideNumber + 1} / {Units.length}
-        </span>
-      </div> */}
     </div>
   );
 };

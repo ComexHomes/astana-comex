@@ -26,7 +26,7 @@ function StudioSecond() {
         </p>
       </div>
 
-      <div style={{ marginTop: "30px" }} className="btn-area">
+      <div className="btn-area mt-30">
         <button className="btn" onClick={handleClick}>
           View Floor Plans
         </button>

@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Enquirestrip from "@/components/Enquirestrip";
 import Footer from "@/components/Footer"; // Adjust path if needed
 // import WhatsAppButton from "../components/WhatsAppButton";
+import WhatsAppButton from "./../components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Astana Residence | Luxury Living in Ngara, Nairobi",
@@ -50,7 +51,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>{children}</main>
-        {/* <WhatsAppButton /> */}
+        <WhatsAppButton />
         <footer>
           <Enquirestrip />
           <Footer />

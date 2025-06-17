@@ -29,9 +29,9 @@ function LocationFirst() {
         </p>
       </div>
 
-      <div style={{ marginTop: "30px" }} className="btn-area">
+      <div className="btn-area mt-30">
         <Link
-          href="https://maps.app.goo.gl/15c9hdiKjR91XrwA6"
+          href="https://g.co/kgs/BgEAVL9"
           target="_blank"
           rel="noopener noreferrer"
         >

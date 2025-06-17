@@ -130,7 +130,7 @@ function OneBedroomSlider() {
   ];
 
   return (
-    <div style={{ marginTop: "30px" }} className="list">
+    <div className="list mt-5">
       <div className="wrapper">
         <AiOutlineArrowLeft
           className="sliderArrow left"
@@ -147,12 +147,6 @@ function OneBedroomSlider() {
           onClick={() => handleClick("right")}
         />
       </div>
-
-      {/* <div className="slider-pagination">
-        <span>
-          {slideNumber + 1} / {Images.length}
-        </span>
-      </div> */}
     </div>
   );
 }
