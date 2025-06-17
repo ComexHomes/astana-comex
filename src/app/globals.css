@@ -1,6 +1,6 @@
-@import url("https://fonts.cdnfonts.com/css/futura-pt");
+/* globals.css */
 
-/* Tailwind config */
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +14,6 @@
   font-family: "Futura PT", sans-serif;
 }
 
-/* Scroll Behavior & Overflow Fix */
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -26,7 +25,7 @@ body {
   position: relative;
 }
 
-/* Custom Scrollbar */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -45,6 +44,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Fixed Elements (Ensures proper layering) */
+.fixed {
+  position: fixed !important;
+  z-index: 10000;
 }
 
 /* start of navigation styles */
@@ -214,19 +219,24 @@ nav {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* Fixed enquire strip - reverted to original positioning */
+/* EnquireStrip Styles */
 .enquirestrip {
   position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #fff;
-  left: 0;
-  bottom: 0;
-  margin: auto;
   padding: 10px 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.enquirestrip.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .description-area {
@@ -303,8 +313,30 @@ nav {
   color: #f8a428;
 }
 
+/* WhatsApp Button Styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 140px;
+  right: 6px;
+  z-index: 10000;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  background-color: #128C7E;
+}
+
 /* Footer styles */
 .main-footer {
+  position: relative;
+  z-index: 1000;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;

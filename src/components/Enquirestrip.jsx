@@ -20,7 +20,7 @@ function Enquirestrip() {
       const windowHeight = window.innerHeight;
 
       // If footer is within 200px of the viewport, hide strip
-      if (footerPosition < windowHeight - 100) {
+      if (footerPosition < windowHeight - 200) {
         setShowStrip(false);
       } else {
         setShowStrip(true);

@@ -1,11 +1,10 @@
-// app/layout.tsx or src/app/layout.tsx
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Enquirestrip from "@/components/Enquirestrip";
-import Footer from "@/components/Footer"; // Adjust path if needed
-// import WhatsAppButton from "../components/WhatsAppButton";
-import WhatsAppButton from "./../components/WhatsAppButton";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "Astana Residence | Luxury Living in Ngara, Nairobi",
@@ -53,9 +52,9 @@ export default function RootLayout({
         <main>{children}</main>
         <WhatsAppButton />
         <footer>
-          <Enquirestrip />
           <Footer />
         </footer>
+        <Enquirestrip />
       </body>
     </html>
   );
