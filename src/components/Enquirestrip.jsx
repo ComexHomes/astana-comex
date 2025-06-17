@@ -1,18 +1,44 @@
+// Enquirestrip.jsx
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 
 function Enquirestrip() {
+  const [showStrip, setShowStrip] = useState(true);
+
   useEffect(() => {
     AOS.init({ duration: 1500 });
-  }, []); // Ensures animation initializes once on mount
+
+    const handleScroll = () => {
+      const footer = document.querySelector("footer");
+      if (!footer) return;
+
+      const footerPosition = footer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      // If footer is within 200px of the viewport, hide strip
+      if (footerPosition < windowHeight - 100) {
+        setShowStrip(false);
+      } else {
+        setShowStrip(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div data-aos="zoom-in" className="enquirestrip">
+    <div
+      data-aos="zoom-in"
+      className={`enquirestrip ${!showStrip ? "hidden" : ""}`}
+      style={{ transition: "opacity 0.3s ease" }}
+    >
       <div className="description-area">
+        {/* Your existing description items */}
         <div className="place">
           <h3>you are viewing</h3>
           <h2>Astana Residence</h2>

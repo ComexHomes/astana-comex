@@ -14,41 +14,34 @@
   font-family: "Futura PT", sans-serif;
 }
 
-/* Global Styles */
-
+/* Scroll Behavior & Overflow Fix */
 html {
-  scroll-behavior: smooth; /* Added smooth scrolling */
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
-  /* Removed overflow: hidden that was preventing scrolling */
+  min-height: 100vh;
+  position: relative;
 }
 
-/* Fixed scrollbar hiding - more targeted approach */
-body::-webkit-scrollbar {
+/* Custom Scrollbar */
+::-webkit-scrollbar {
   width: 8px;
 }
-
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #f8a428;
   border-radius: 4px;
 }
-
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #e0931f;
 }
 
-/* Remove problematic div scrollbar rules */
-div {
-  /* Removed conflicting overflow rules */
-}
-
+/* Remove default anchor underline and inherit color */
 a {
   text-decoration: none;
   color: inherit;
