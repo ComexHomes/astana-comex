@@ -230,10 +230,10 @@ nav {
 .enquirestrip {
   /* height: 130px; */
   position: fixed;
-  width: 100%;
-  background-color: #fff;
-  left: 0;
+  width: calc(100% - 80px); /* Leave space for WhatsApp button */
   bottom: 0;
+  right: 80px;
+  background-color: #fff;
   overflow: hidden;
   overflow-x: hidden;
   margin: auto;
@@ -242,11 +242,6 @@ nav {
   flex-direction: column;
   gap: 10px;
 }
-
-/* .enquirestrip::-webkit-scrollbar{
-  display: none;
-  overflow: hidden;
-} */
 
 .description-area {
   display: grid;
