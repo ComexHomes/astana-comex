@@ -147,7 +147,7 @@ function ContactArea() {
         />
 
         <Image
-          src="/ASTANA-RESIDENCE-LOGO.png"
+          src="/logo.png"
           alt="Astana Residence logo"
           width={150}
           height={100}
