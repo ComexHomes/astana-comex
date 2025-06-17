@@ -10,7 +10,6 @@
   padding: 0;
   outline: none;
   letter-spacing: 1.5px;
-  overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Futura PT", sans-serif;
 }
@@ -18,36 +17,36 @@
 /* Global Styles */
 
 html {
-  overflow-y: scroll;
+  scroll-behavior: smooth; /* Added smooth scrolling */
   overflow-x: hidden;
 }
 
 body {
-  overflow: hidden;
   overflow-x: hidden;
+  /* Removed overflow: hidden that was preventing scrolling */
 }
 
-body::-webkit-scrollbar,
-.place::-webkit-scrollbar {
-  display: none !important;
-  overflow-x: hidden;
-  width: 0;
+/* Fixed scrollbar hiding - more targeted approach */
+body::-webkit-scrollbar {
+  width: 8px;
 }
 
-div::-webkit-scrollbar {
-  width: 0 !important;
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
+body::-webkit-scrollbar-thumb {
+  background: #f8a428;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #e0931f;
+}
+
+/* Remove problematic div scrollbar rules */
 div {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-div::-webkit-scrollbar {
-  display: none;
-  overflow-x: hidden;
+  /* Removed conflicting overflow rules */
 }
 
 a {
@@ -113,7 +112,6 @@ nav {
 
 .nav__link:hover {
   color: #f8a428;
-  overflow: hidden;
 }
 
 .center {
@@ -155,10 +153,8 @@ nav {
 .banner-image {
   height: 100vh;
   width: 100%;
-  object-fit: contain;
   object-fit: cover;
   z-index: -10;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -191,7 +187,6 @@ nav {
 }
 
 .main {
-  overflow: visible;
   width: 100%;
 }
 
@@ -223,36 +218,29 @@ nav {
   position: absolute;
   left: 50%;
   top: 40%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
+/* Fixed enquire strip - reverted to original positioning */
 .enquirestrip {
-  /* height: 130px; */
   position: fixed;
-  width: calc(100% - 80px); /* Leave space for WhatsApp button */
-  bottom: 0;
-  right: 80px;
+  width: 100%;
   background-color: #fff;
-  overflow: hidden;
-  overflow-x: hidden;
+  left: 0;
+  bottom: 0;
   margin: auto;
   padding: 10px 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 1000;
 }
 
 .description-area {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: 10px;
-  overflow: hidden;
 }
-
-/* .description-area .place h2{
-  color: #fff;
-} */
 
 @media screen and (max-width: 768px) {
   .description-area {
@@ -269,9 +257,7 @@ nav {
 @media screen and (max-width: 468px) {
   .description-area {
     grid-template-columns: 1fr;
-    /* margin: auto; */
     align-items: start;
-    /* gap: 40px; */
   }
 }
 
@@ -286,9 +272,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: hidden !important;
-  overflow-x: hidden !important;
-  /* align-items: center; */
+  line-height: 1.5;
 }
 
 .place::-webkit-scrollbar {
@@ -304,7 +288,6 @@ nav {
 .place h2 {
   font-weight: 600;
   color: #f8a428;
-  /* line-height: 1.2; */
 }
 
 .btn {
@@ -340,7 +323,6 @@ nav {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
-  /* justify-content: center; */
   gap: 40px;
 }
 
@@ -406,7 +388,6 @@ nav {
 .bottom {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 /* About Team Styles */
@@ -433,7 +414,6 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
-  overflow: hidden;
 }
 
 .about-team .bottom .place h2 {
@@ -444,7 +424,6 @@ nav {
 @media screen and (max-width: 768px) {
   .about-team .bottom {
     grid-template-columns: 1fr;
-    /* margin: auto; */
     gap: 40px;
     width: 100%;
   }
@@ -453,7 +432,6 @@ nav {
 @media screen and (max-width: 468px) {
   .about-team .bottom {
     grid-template-columns: 1fr;
-    /* margin: auto; */
     gap: 40px;
   }
 }
@@ -483,7 +461,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   gap: 10px;
   padding: 80px 40px;
 }
@@ -501,7 +478,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  /* opacity: .7; */
 }
 
 @media screen and (max-width: 768px) {
@@ -513,9 +489,7 @@ nav {
 @media screen and (max-width: 468px) {
   .bottom-city {
     grid-template-columns: 1fr;
-    /* margin: auto; */
     align-items: start;
-    /* gap: 40px; */
   }
 }
 
@@ -562,7 +536,6 @@ nav {
 @media screen and (max-width: 768px) {
   .top-layer {
     grid-template-columns: 1fr;
-    /* margin: auto; */
     align-items: start;
     gap: 40px;
   }
@@ -684,7 +657,6 @@ h6 {
 .location-cover {
   width: 100%;
   height: 600px;
-  /* background-image: url('../assets/Google Map Reveal.jpg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -723,7 +695,6 @@ h6 {
   align-items: center;
   gap: 20px;
   position: relative;
-  /* background-color: #f8a428; */
 }
 
 .amenities-second .amenities-first-heading h2 {
@@ -758,12 +729,6 @@ h6 {
   cursor: pointer;
 }
 
-.place {
-  height: fit-content !important;
-  overflow: hidden !important;
-  line-height: 1.5;
-}
-
 .list .wrapper .sliderArrow.left {
   left: 0;
 }
@@ -780,7 +745,6 @@ h6 {
   width: max-content;
   transform: translateX(0px);
   transition: all 1s ease;
-  overflow: hidden;
 }
 
 .listItem {
@@ -788,7 +752,6 @@ h6 {
   height: 250px;
   background-color: var(--main-color);
   margin-right: 5px;
-  overflow: hidden;
   cursor: pointer;
   color: white;
 }
@@ -816,7 +779,6 @@ ul {
 .contact-area {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* padding: 60px 0px; */
   margin-top: -5px;
   margin-bottom: 30px;
 }
@@ -866,13 +828,11 @@ ul {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
-  /* margin-bottom: 10px; */
 }
 
 .input-carrier input {
   padding: 10px 20px;
   width: 100%;
-  /* border-radius: 5px; */
   border: none;
   outline: none;
   background: transparent;
@@ -882,7 +842,6 @@ ul {
 
 .message {
   padding: 10px 20px;
-  /* border-radius: 5px; */
   width: 100%;
   border: none;
   outline: none;
@@ -946,7 +905,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 30px; */
 }
 
 .map-image-area {
@@ -985,10 +943,7 @@ ul {
   height: 400px;
   width: 900px;
   margin: auto;
-  /* background-color: #f8a428; */
   object-fit: cover;
-  /* border: 1px solid #000000; */
-  /* padding: 10px; */
 }
 
 .text-above {
@@ -1056,8 +1011,6 @@ ul {
 
 .investment-plan .heading-place {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   text-transform: uppercase;
   color: #f8a428;
   margin-bottom: 10px;
@@ -1091,7 +1044,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* list-style: circle; */
 }
 
 .purchase-plan .list-purchase li span {

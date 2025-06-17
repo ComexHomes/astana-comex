@@ -3,7 +3,7 @@ import React from "react";
 
 const WhatsAppButton = () => {
   const phoneNumber = "+254709501501";
-  const message = "Hello!"; // Optional default message
+  const message = "Hello!";
 
   const handleClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber.replace(
@@ -16,7 +16,7 @@ const WhatsAppButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-[80px] right-6 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center z-[9999] border-2 border-white"
+      className="fixed bottom-[140px] right-6 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center z-[9999] border-2 border-white"
       aria-label="Contact on WhatsApp"
     >
       <svg
