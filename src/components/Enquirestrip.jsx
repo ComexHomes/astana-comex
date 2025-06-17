@@ -13,10 +13,8 @@ function Enquirestrip() {
 
   return (
     <div data-aos="zoom-in" className="enquirestrip">
+      <WhatsAppButton />
       <div className="description-area">
-        <div>
-          <WhatsAppButton />
-        </div>
         <div className="place">
           <h3>you are viewing</h3>
           <h2>Astana Residence</h2>
