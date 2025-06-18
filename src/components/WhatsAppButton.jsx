@@ -1,10 +1,9 @@
-// WhatsAppButton.tsx
 "use client";
 import React from "react";
 
 const WhatsAppButton = () => {
   const phoneNumber = "+254709501501";
-  const message = "Hello!";
+  const message = "Hello!"; // Optional default message
 
   const handleClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber.replace(
@@ -17,11 +16,11 @@ const WhatsAppButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-[140px] right-6 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-110 flex items-center justify-center z-[99999] border-2 border-white"
+      className="fixed bottom-6 left-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-transform duration-200 ease-in-out transform hover:scale-110 flex items-center justify-center z-50"
       aria-label="Contact on WhatsApp"
     >
       <svg
-        className="w-7 h-7"
+        className="w-8 h-8"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"

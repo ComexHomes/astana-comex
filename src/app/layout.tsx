@@ -52,9 +52,9 @@ export default function RootLayout({
         <main>{children}</main>
         <WhatsAppButton />
         <footer>
+          <Enquirestrip />
           <Footer />
         </footer>
-        <Enquirestrip />
       </body>
     </html>
   );
