@@ -50,11 +50,11 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>{children}</main>
-        <WhatsAppButton />
         <footer>
           <Enquirestrip />
           <Footer />
         </footer>
+        <WhatsAppButton />
       </body>
     </html>
   );

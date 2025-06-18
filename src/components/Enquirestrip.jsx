@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+// import WhatsAppButton from "@/components/WhatsAppButton";
 
 function Enquirestrip() {
   useEffect(() => {
@@ -50,6 +51,7 @@ function Enquirestrip() {
             <button className="btn">Register Interest</button>
           </Link>
         </div>
+        <div className="place">{/* <WhatsAppButton /> */}</div>
       </div>
     </div>
   );
