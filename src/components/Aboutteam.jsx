@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 function Aboutteam() {
   useEffect(() => {
     AOS.init({ duration: 1500 });
-  });
+  }, []);
 
   return (
     <div data-aos="fade-up" className="about-team">

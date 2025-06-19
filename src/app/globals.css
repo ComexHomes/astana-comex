@@ -183,7 +183,7 @@ nav {
 }
 
 .text h1 {
-  font-size: 100px;
+  font-size: 60px;
   color: #fff;
   margin-top: -20px;
   text-transform: uppercase;
@@ -337,7 +337,7 @@ nav {
 
 /* Footer styles */
 .main-footer {
-  padding: 20px 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   background-color: #f8a428;
@@ -346,75 +346,95 @@ nav {
 
 .main-footer .top {
   display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  /* justify-content: center; */
-  gap: 40px;
-}
-
-.main-footer .top .area {
-  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 30px;
 }
 
-.main-footer .top .right-area-side {
+.footer-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  margin-bottom: 20px;
+  text-align: center;
+  min-width: 200px;
 }
 
-.main-footer .top .right-area-side h3 {
+.footer-section h3 {
   text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  line-height: 1.5;
 }
 
 .footer-image {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
+  height: 80px;
+  width: 120px;
+  object-fit: contain;
 }
 
-.main-footer .top .area .logo-line,
-.main-footer .top .area .area-line {
-  height: 150px;
+.footer-divider {
+  height: 100px;
   width: 2px;
-  background-color: black;
-}
-
-@media screen and (max-width: 768px) {
-  .main-footer .top {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-    gap: 40px;
-  }
-
-  .main-footer .top .right-area-side {
-    margin-bottom: 20px;
-  }
-
-  .main-footer .top .area .logo-line,
-  .main-footer .top .area .area-line {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  .main-footer .top {
-    grid-template-columns: 1fr;
-    margin: auto;
-    gap: 40px;
-  }
+  background-color: #000;
+  flex-shrink: 0;
 }
 
 .bottom {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+  /* border-top: 2px solid #000; */
+  padding-top: 20px;
+}
+
+.bottom p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+  .main-footer {
+    padding: 30px 20px;
+  }
+
+  .main-footer .top {
+    gap: 40px;
+  }
+
+  .footer-divider {
+    height: 80px;
+  }
+
+  .footer-section {
+    min-width: 180px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .main-footer .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .footer-section {
+    width: 100%;
+    min-width: auto;
+  }
 }
 
 /* About Team Styles */

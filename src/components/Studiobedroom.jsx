@@ -9,18 +9,28 @@ function Studiobedroom() {
     AOS.init({ duration: 1500 });
   }, []); // Added dependency array
 
-  const brochure = "https://example.com/Astana_Residence_Brochure.pdf"; // Replace with actual URL if available
+  // Correct path for files in the public folder
+  const brochure = "/CATALOGUE ASTANA.pdf"; // Remove ../../public/ prefix
 
   const handleClick = (url) => {
     console.log("This button has been clicked");
 
-    const fileName = url.split("/").pop();
-    const aTag = document.createElement("a");
-    aTag.href = url;
-    aTag.setAttribute("download", fileName);
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
+    try {
+      // Create a temporary link element
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "CATALOGUE ASTANA.pdf"; // Set explicit filename
+      link.target = "_blank"; // Open in new tab as fallback
+
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Download failed:", error);
+      // Fallback: open in new tab
+      window.open(url, "_blank");
+    }
   };
 
   const runHandleClick = () => {

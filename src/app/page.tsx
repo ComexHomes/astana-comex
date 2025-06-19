@@ -1,8 +1,4 @@
 import Head from "next/head";
-// import Image from "next/image";
-// import { Inter } from '@next/font/google'
-// import { NextSeo } from "next-seo";
-// import styles from "./Home.module.css";
 import Homebanner from "@/components/Homebanner";
 import Aboutteam from "@/components/Aboutteam";
 import Cover from "@/components/Cover";
@@ -10,9 +6,6 @@ import City from "@/components/City";
 import Covertwo from "@/components/Covertwo";
 import Studiobedroom from "@/components/Studiobedroom";
 import Revealarea from "@/components/Revealarea";
-
-// const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <>
