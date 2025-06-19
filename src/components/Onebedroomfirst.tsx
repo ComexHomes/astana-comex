@@ -21,7 +21,7 @@ function OneBedroomFirst() {
 
       <div className="amenities-first-text">
         <p>
-          Experience skyline views and a floor plan crafted for today's urban
+          Experience skyline views and a floor plan crafted for todays urban
           lifestyle. Every executive one‑bedroom residence delivers:
           Breathtaking open windows that flood the living space with natural
           light Intuitive, open‑concept layout that maximizes every square foot
