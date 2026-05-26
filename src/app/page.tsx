@@ -6,9 +6,11 @@ import City from "@/components/City";
 import Covertwo from "@/components/Covertwo";
 import Studiobedroom from "@/components/Studiobedroom";
 import Revealarea from "@/components/Revealarea";
+import TourModal from "@/components/TourModal";
 export default function Home() {
   return (
     <>
+      <TourModal />
       <Head>
         <title>ASTANA</title>
         <meta
