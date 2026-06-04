@@ -2,17 +2,32 @@
 
 import React, { useEffect, useState } from "react";
 
-const TourModal: React.FC = () => {
+interface TourModalProps {
+  open?: boolean;
+  onClose?: () => void;
+}
+
+const TourModal: React.FC<TourModalProps> = ({ open, onClose }) => {
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    setVisible(true);
-  }, []);
+  const isControlled = open !== undefined;
 
-  if (!visible) return null;
+  useEffect(() => {
+    if (!isControlled) setVisible(true);
+  }, [isControlled]);
+
+  const handleClose = () => {
+    if (isControlled) {
+      onClose?.();
+    } else {
+      setVisible(false);
+    }
+  };
+
+  if (isControlled ? !open : !visible) return null;
 
   return (
-    <div className="tour-modal-overlay" onClick={() => setVisible(false)}>
+    <div className="tour-modal-overlay" onClick={handleClose}>
       <div
         className="tour-modal-box"
         onClick={(e) => e.stopPropagation()}
@@ -27,7 +42,7 @@ const TourModal: React.FC = () => {
           </div>
           <button
             className="tour-modal-close"
-            onClick={() => setVisible(false)}
+            onClick={handleClose}
             aria-label="Close tour"
           >
             &times;
@@ -38,14 +53,13 @@ const TourModal: React.FC = () => {
           <iframe
             style={{ maxWidth: "100%", width: "100%", height: "100%", border: 0 }}
             src="https://www.klapty.com/tour/tunnel/5Ka0mhRYoV"
-            frameBorder={0}
             allowFullScreen
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; vr"
           />
         </div>
 
         <div className="tour-modal-footer">
-          <button className="btn" onClick={() => setVisible(false)}>
+          <button className="btn" onClick={handleClose}>
             Close Tour
           </button>
         </div>

@@ -4,10 +4,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
-// import Logo from "../assets/logo.jpg"; // Make sure this path is correct
 import NavItem from "./NavItem";
+import TourModal from "./TourModal";
 
-// Define types for menu items
 interface MenuItem {
   text: string;
   href: string;
@@ -26,42 +25,55 @@ const MENU_LIST: MenuItem[] = [
 const Navbar = () => {
   const [navActive, setNavActive] = useState<boolean>(false);
   const [activeIdx, setActiveIdx] = useState<number>(-1);
+  const [tourOpen, setTourOpen] = useState<boolean>(false);
 
   return (
-    <header>
-      <nav className="nav">
-        <Link href="/">
-          <Image
-            src="/ASTANA-RESIDENCE-LOGO.png"
-            className="nav-image"
-            priority
-            height={70}
-            alt="Astana Residence logo"
-            width={120} // Add width for better layout performance
-          />
-        </Link>
+    <>
+      <header>
+        <nav className="nav">
+          <Link href="/">
+            <Image
+              src="/ASTANA-RESIDENCE-LOGO.png"
+              className="nav-image"
+              priority
+              height={70}
+              alt="Astana Residence logo"
+              width={120}
+            />
+          </Link>
 
-        <div onClick={() => setNavActive(!navActive)} className="nav__menu-bar">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+          <div onClick={() => setNavActive(!navActive)} className="nav__menu-bar">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
 
-        <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-          {MENU_LIST.map((menu, idx) => (
-            <div
-              key={menu.text}
-              onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-            >
-              <NavItem active={activeIdx === idx} {...menu} />
+          <div className={`${navActive ? "active" : ""} nav__menu-list`}>
+            {MENU_LIST.map((menu, idx) => (
+              <div
+                key={menu.text}
+                onClick={() => {
+                  setActiveIdx(idx);
+                  setNavActive(false);
+                }}
+              >
+                <NavItem active={activeIdx === idx} {...menu} />
+              </div>
+            ))}
+            <div onClick={() => { setNavActive(false); }}>
+              <button
+                className="nav__link nav__tour-btn"
+                onClick={() => setTourOpen(true)}
+              >
+                3D Tour
+              </button>
             </div>
-          ))}
-        </div>
-      </nav>
-    </header>
+          </div>
+        </nav>
+      </header>
+
+      <TourModal open={tourOpen} onClose={() => setTourOpen(false)} />
+    </>
   );
 };
 
