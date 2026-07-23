@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Enquirestrip from "@/components/Enquirestrip";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import Script from 'next/script'
+
 
 export default function RootLayout({ children }) {
   return (
