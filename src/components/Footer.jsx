@@ -38,7 +38,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Comex Homes</h3>
           <p>Telkom Plaza, 1st Floor, Hurlingham</p>
-          <p>Phone: +254 709 501 501</p>
+          <p>Sales: +254 709 501 501</p>
           <p>Email: info@comexhomes.ke</p>
         </div>
       </div>
