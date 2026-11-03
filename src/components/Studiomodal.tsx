@@ -46,10 +46,10 @@ const StudioModal: React.FC<StudioModalProps> = ({ closeModal }) => {
             <strong>Price From:</strong> KSH 3,510,000
           </p>
           <p>
-            <strong>Rental Expected:</strong> KSH 23,400/month
+            <strong>Rental Expected:</strong> KSH 29,000/month
           </p>
           <p>
-            <strong>Rental Yield:</strong> 8%
+            <strong>Rental Yield:</strong> 10%
           </p>
           <p>
             <strong>Capital Appreciation:</strong> 30% over 2 years

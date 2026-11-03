@@ -70,7 +70,7 @@ const AmenitiesSlider = () => {
       title: "Premium Studio",
       size: "27 SQM",
       price: "KSH 3,510,000",
-      rentalYield: "8% Yield | KSH 23,400/month",
+      rentalYield: "10% Yield | KSH 29,000/month",
     },
     {
       id: 1,
@@ -115,7 +115,7 @@ const AmenitiesSlider = () => {
       title: "Elegant One Bedroom",
       size: "42 SQM",
       price: "KSH 5,460,000",
-      rentalYield: "8% Yield | KSH 36,400/month",
+      rentalYield: "10% Yield | KSH 45,000/month",
     },
     {
       id: 6,
