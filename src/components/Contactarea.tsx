@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { ImFacebook } from "react-icons/im";
 import {
   AiOutlineInstagram,
@@ -10,8 +10,6 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import emailjs from "@emailjs/browser";
-import Result from "./Result"; // Ensure this component is updated accordingly
 
 // interface FormValues {
 //   firstName: string;
@@ -23,28 +21,7 @@ import Result from "./Result"; // Ensure this component is updated accordingly
 // }
 
 function ContactArea() {
-  const [result, setResult] = useState(false);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_prk4agt", // Replace with your actual service ID
-        "template_92qp9di", // Replace with your template ID
-        e.target as HTMLFormElement,
-        "wyL9szuhcFXTO7PpM4yk0" // Replace with your user ID
-      )
-      .then((response) => {
-        console.log("Success:", response.text);
-        setResult(true);
-      })
-      .catch((error) => {
-        console.error("Error:", error.text);
-      });
-
-    e.currentTarget.reset(); // Reset form after submission
-  };
 
   return (
     <div className="contact-area">
@@ -53,81 +30,15 @@ function ContactArea() {
           <h1>Contact Us</h1>
         </div>
 
-        <form className="contact-form" onSubmit={sendEmail}>
-          <div className="top-form">
-            <div className="input-carrier">
-              <label htmlFor="firstName">First Name</label>
-              <input
-                type="text"
-                name="firstName"
-                required
-                placeholder="Enter your first name"
-              />
-            </div>
-
-            <div className="input-carrier">
-              <label htmlFor="secondName">Last Name</label>
-              <input
-                type="text"
-                name="secondName"
-                required
-                placeholder="Enter your last name"
-              />
-            </div>
-
-            <div className="input-carrier">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Enter your email"
-                title="Email"
-              />
-            </div>
-
-            <div className="input-carrier">
-              <label htmlFor="phone">Phone Number</label>
-              <input
-                type="tel"
-                name="phone"
-                required
-                placeholder="Enter your phone number"
-                title="Phone Number"
-              />
-            </div>
-          </div>
-
-          <div className="input-carrier">
-            <label htmlFor="subject">Subject</label>
-            <input
-              type="text"
-              name="subject"
-              required
-              placeholder="Enter the subject"
-              title="Subject"
-            />
-          </div>
-
-          <div className="input-carrier">
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              className="message"
-              required
-              title="Message"
-              placeholder="Enter your message"
-            />
-          </div>
-
-          <div className="btn-area">
-            <button type="submit" className="btn-light">
-              Submit
-            </button>
-          </div>
-
-          <div className="result">{result && <Result />}</div>
-        </form>
+        <div style={{ width: "100%" }}>
+          {/* Website Enquiry form in Zoho Forms (info@comexhomes.ke). Every submission is emailed to info@comexhomes.ke. */}
+          <iframe
+            title="Website Enquiry"
+            aria-label="Website Enquiry"
+            src="https://forms.zohopublic.com/balozi/form/WebsiteEnquiry/formperma/lMJLwfCsL2F8murEt4IYFdRYU6FWs7a6Xe9Ai3gVfw8?Website=https%3A%2F%2Fwww.astanaresidence.com"
+            style={{ width: "100%", height: "900px", border: "none", background: "#fff", borderRadius: 8 }}
+          />
+        </div>
 
         <div className="more-text">
           <p style={{ fontSize: "16px", color: "#fff" }}>
