@@ -37,12 +37,22 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Comex Homes</h3>
-          <p>Hurligham Telkom Plaza, 1st Floor</p>
+          <p>Telkom Plaza, 1st Floor, Hurlingham</p>
           <p>Phone: +254 709 501 501</p>
           <p>Email: info@comexhomes.ke</p>
         </div>
       </div>
 
+      <div className="footer-seo-links" style={{ textAlign: "center", fontSize: 13, lineHeight: 1.9, padding: "8px 16px" }}>
+        <a href="/apartments/apartments-for-sale-in-ngara">Apartments for sale in Ngara</a>
+        {" · "}<a href="/apartments/apartments-for-sale-near-nairobi-cbd">Near Nairobi CBD</a>
+        {" · "}<a href="/apartments/student-and-young-professional-apartments-nairobi">For students and young professionals</a>
+        {" · "}<a href="/apartments/apartments-near-thika-road-and-expressway">Near Thika Road</a>
+        {" · "}<a href="/apartments/apartments-near-parklands-and-pangani">Near Parklands and Pangani</a>
+        {" · "}<a href="/apartments/buy-apartment-in-nairobi-from-abroad">Buy from abroad</a>
+        <br />
+        A <a href="https://www.comexhomes.ke/">Comex Homes</a> project · Also selling: <a href="https://www.lukenyaridge.com/">Lukenya Ridge plots, Mombasa Road</a>
+      </div>
       <div className="bottom">
         <p>Astana Residence &copy; {currentYear}</p>
       </div>
