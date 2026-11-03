@@ -6,38 +6,82 @@ import Navbar from "@/components/Navbar";
 import Enquirestrip from "@/components/Enquirestrip";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { SITE, FACTS, FAQS, PHONE } from "@/data/seo";
 
 export const metadata: Metadata = {
-  title: "Astana Residence | Luxury Living in Ngara, Nairobi",
+  metadataBase: new URL(SITE),
+  title: {
+    default: "Astana Residence | Studio and 1 Bedroom Apartments for Sale in Ngara, Nairobi",
+    template: "%s | Astana Residence",
+  },
   description:
-    "Discover luxury living at Astana Residence in Ngara, Nairobi. Premium studios and one-bedroom apartments designed for students and young professionals.",
-  keywords:
-    "Astana Residence, luxury apartments, Nairobi residence, student housing, young professionals, Comex Homes, studio apartments, one bedroom Nairobi",
+    "Studios from KES 3.51M and one bedrooms from KES 5.46M in Ngara, walking distance to Nairobi CBD. About 10% expected yield, pool, gym, rooftop lounge. Sold and managed by Comex Homes.",
+  keywords: [
+    "Astana Residence",
+    "apartments for sale in Ngara",
+    "studio apartments for sale Nairobi",
+    "1 bedroom apartment for sale Nairobi",
+    "apartments near Nairobi CBD",
+    "Comex Homes",
+  ],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Astana Residence | Luxury Living in Ngara, Nairobi",
+    title: "Astana Residence | Studios and 1 Bedrooms in Ngara, Nairobi",
     description:
-      "Premium studio and one-bedroom apartments offering luxury, convenience, and high rental yield in Ngara, Nairobi.",
-    url: "https://www.astanarezidence.com", // Fixed trailing spaces
+      "Studios from KES 3.51M and one bedrooms from KES 5.46M in Ngara, walking distance to Nairobi CBD. About 10% expected rental yield.",
+    url: SITE,
     siteName: "Astana Residence",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 800,
-        height: 600,
-        alt: "Astana Residence Banner Image",
-      },
-    ],
+    images: [{ url: "/001.jpg", alt: "Astana Residence, Ngara, Nairobi" }],
     locale: "en_KE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Astana Residence | Luxury Living in Ngara, Nairobi",
-    description:
-      "Premium studio and one-bedroom apartments offering luxury, convenience, and high rental yield in Ngara, Nairobi.",
-    images: ["/og-image.jpg"],
+    title: "Astana Residence | Studios and 1 Bedrooms in Ngara, Nairobi",
+    description: "Studios from KES 3.51M in Ngara, walking distance to Nairobi CBD.",
+    images: ["/001.jpg"],
+  },
+  verification: {
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION } : {}),
+    other: {
+      ...(process.env.NEXT_PUBLIC_BING_VERIFICATION ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION } : {}),
+    },
   },
 };
+
+const ld = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ApartmentComplex",
+    "@id": `${SITE}/#residence`,
+    name: FACTS.name,
+    url: SITE,
+    image: `${SITE}/001.jpg`,
+    description: `New studio and one bedroom apartments in ${FACTS.location}.`,
+    address: { "@type": "PostalAddress", addressLocality: "Ngara", addressRegion: "Nairobi", addressCountry: "KE" },
+    amenityFeature: FACTS.amenities.map((n) => ({ "@type": "LocationFeatureSpecification", name: n, value: true })),
+    makesOffer: [
+      { "@type": "Offer", name: "Studio apartment, 291 sqft", price: FACTS.studio.priceNum, priceCurrency: "KES", availability: "https://schema.org/InStock" },
+      { "@type": "Offer", name: "One bedroom apartment, 452 sqft", price: FACTS.oneBed.priceNum, priceCurrency: "KES", availability: "https://schema.org/InStock" },
+    ],
+    containedInPlace: { "@type": "Place", name: "Ngara, Nairobi, Kenya" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "@id": "https://www.comexhomes.ke/#organization",
+    name: "Comex Homes",
+    url: "https://www.comexhomes.ke",
+    telephone: PHONE,
+    email: "info@comexhomes.ke",
+    address: { "@type": "PostalAddress", streetAddress: "Telkom Plaza, 1st Floor, Hurlingham", addressLocality: "Nairobi", addressCountry: "KE" },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  },
+];
 
 export default function RootLayout({
   children,
@@ -45,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en-KE">
       <body className="min-h-screen bg-white text-gray-900 antialiased">
         <header>
           <Navbar />
@@ -56,6 +100,17 @@ export default function RootLayout({
           <Footer />
         </footer>
         <WhatsAppButton />
+        {ld.map((d, i) => (
+          <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(d) }} />
+        ))}
+
+        {/* Vercel Web Analytics (enable it in the Vercel dashboard) */}
+        <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
+
+        {/* Metricool (was inside next/head on the home page, which the App Router ignores) */}
+        <Script id="metricool" strategy="lazyOnload">
+          {`function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"e8d4e123d329ca216a27723f23c6f43f"})});`}
+        </Script>
 
         {/* ✅ Meta Pixel */}
         <Script id="fb-pixel" strategy="afterInteractive">
